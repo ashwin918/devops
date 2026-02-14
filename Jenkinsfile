@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    triggers {
+        githubPush()
+    }
+
     environment {
         IMAGE_NAME = "ashwinemcbalaji/cicd-node-app"
         DOCKERHUB_CREDENTIALS = "dockerhub-cred1"
