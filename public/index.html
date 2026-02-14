@@ -3,54 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CI/CD Pipeline Dashboard</title>
+  <title>CI/CD Deployment</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <nav class="navbar">
-    <h2>DevOps CI/CD</h2>
+  <div class="background"></div>
+
+  <nav>
+    <h2>DevOps</h2>
     <ul>
-      <li>Home</li>
+      <li>Platform</li>
       <li>Pipeline</li>
-      <li>Deployments</li>
       <li>Status</li>
+      <li>Docs</li>
     </ul>
   </nav>
 
-  <main class="hero">
-    <div class="hero-content">
-      <h1>🚀 CI/CD Pipeline Active</h1>
-      <p>
-        This application is automatically built, tested, and deployed
-        using Jenkins, Docker, and GitHub.
-      </p>
+  <section class="hero">
+    <h1 class="animate-text">
+      <span>Build.</span>
+      <span>Test.</span>
+      <span>Deploy.</span>
+    </h1>
 
-      <div class="stats">
-        <div class="card">
-          <h3>Build</h3>
-          <span class="success">SUCCESS</span>
-        </div>
-        <div class="card">
-          <h3>Tests</h3>
-          <span class="success">PASSED</span>
-        </div>
-        <div class="card">
-          <h3>Deploy</h3>
-          <span class="success">LIVE</span>
-        </div>
-      </div>
+    <p class="subtitle">
+      Automated CI/CD pipeline powered by Jenkins, Docker & GitHub
+    </p>
 
-      <button onclick="alert('CI/CD Pipeline Successful 🚀')">
-        Trigger Test Action
-      </button>
+    <div class="badges">
+      <div class="badge success">✔ Build Passed</div>
+      <div class="badge success">✔ Tests Passed</div>
+      <div class="badge live">🚀 Live</div>
     </div>
-  </main>
+
+    <button>View Deployment</button>
+  </section>
 
   <footer>
-    <p>© 2026 DevOps Pipeline Demo | Powered by Jenkins & Docker</p>
+    <p>© 2026 CI/CD Platform · Always Shipping 🚀</p>
   </footer>
 
 </body>
 </html>
-
