@@ -1,15 +1,56 @@
-c<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>CI/CD Practice App emc</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CI/CD Pipeline Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>🚀 CI/CD Pipeline Working!yes working?</h1>
-    <p>This app was automatically deployed using Jenkins + Docker</p>
-    <button onclick="alert('Pipeline Success!')">Test Button</button>
-  </div>
+
+  <nav class="navbar">
+    <h2>DevOps CI/CD</h2>
+    <ul>
+      <li>Home</li>
+      <li>Pipeline</li>
+      <li>Deployments</li>
+      <li>Status</li>
+    </ul>
+  </nav>
+
+  <main class="hero">
+    <div class="hero-content">
+      <h1>🚀 CI/CD Pipeline Active</h1>
+      <p>
+        This application is automatically built, tested, and deployed
+        using Jenkins, Docker, and GitHub.
+      </p>
+
+      <div class="stats">
+        <div class="card">
+          <h3>Build</h3>
+          <span class="success">SUCCESS</span>
+        </div>
+        <div class="card">
+          <h3>Tests</h3>
+          <span class="success">PASSED</span>
+        </div>
+        <div class="card">
+          <h3>Deploy</h3>
+          <span class="success">LIVE</span>
+        </div>
+      </div>
+
+      <button onclick="alert('CI/CD Pipeline Successful 🚀')">
+        Trigger Test Action
+      </button>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 DevOps Pipeline Demo | Powered by Jenkins & Docker</p>
+  </footer>
+
 </body>
 </html>
+
