@@ -37,7 +37,7 @@ pipeline {
                 script {
                     bat 'docker stop cicd-container || exit 0'
                     bat 'docker rm cicd-container || exit 0'
-                    bat 'docker run -d -p 3000:3000 --name cicd-container ashwinemcbalaji/cicd-node-app:latest'
+                    bat 'docker run -d -p 4003:3000 --name cicd-container ashwinemcbalaji/cicd-node-app:latest'
                 }
             }
         }
